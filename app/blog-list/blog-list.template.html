@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="text-center">
+    <p class="display-4 text-primary">Deloitte Blog Posts</p>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      
+    </div>
+    <div class="col-md-8">
+
+      <div class="my-3 py-3">
+        <input type="text" ng-model="$ctrl.query" class="form-control"
+          placeholder="Search a blog post here or select one below">
+      </div>
+
+      <div>
+        <p ng-repeat="blog in $ctrl.blogs | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+          <a href="#!/blogs/{{blog.id}}">{{blog.title}}</a>
+        </p>
+      </div>
+
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
+</div>

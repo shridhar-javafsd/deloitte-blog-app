@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="DeloitteBlogApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Deloitte Blog App | Mumbai | 2023</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://www2.deloitte.com/content/dam/Deloitte/in/Images/promo_images/in-deloitte-logo-1x1-noexp.png">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="blog-list/blog-list.module.js"></script>
+  <script src="blog-list/blog-list.component.js"></script>
+  <script src="blog-detail/blog-detail.module.js"></script>
+  <script src="blog-detail/blog-detail.component.js"></script>
+  <script src="home/home.module.js"></script>
+  <script src="home/home.component.js"></script>
+</head>
+
+<body>
+
+  <div ng-view></div>
+
+</body>
+
+</html>
